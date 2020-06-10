@@ -5,6 +5,9 @@
 AN TESTE Account ID:
 5abdfdd3-6ee6-4941-90d8-95373f7d1b26
 
+<b>Test Page</b>
+https://salesengineertestan.000webhostapp.com/index.html
+
 <b>What is a token?</b>
 
 Tokenization is used as an additional security measure against online fraud and refers to a process whereby sensitive data is protected by replacing it with a randomly generated value, called a token.
@@ -45,3 +48,5 @@ https://developers.paymentsos.com/docs/providers.html
 
 ## Postman Collection Link
 https://app.getpostman.com/join-team?invite_code=420cd77f7532ff67d2d2e814ffb71708
+
+https://github.com/astridnio/Payment-flow-test/blob/master/documentation%20resourses/PaymentsOS-PayU-Latam.postman_collection.json
