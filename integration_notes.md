@@ -23,6 +23,8 @@ Steps:
 2.	Navigate to Account --> Business units --> Create a Business unit.
 3.	Add the name and description.
 4.	Choose a default Provider for this Business Unit
+
+![Image of logo](https://github.com/astridnio/Payment-flow-test/blob/master/documentation%20resourses/JOSYTOe6ay.gif)
  
 <b>How do I perform testing?</b>
 
