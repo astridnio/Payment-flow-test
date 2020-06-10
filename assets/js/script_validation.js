@@ -4,10 +4,11 @@ $(function() {
     var cardNumber = $('#cardNumber');
     var cardNumberField = $('#card-number-field');
     var CVV = $("#cvv");
-    var mastercard = $("#mastercard");
     var confirmButton = $('#confirm-purchase');
     var visa = $("#visa");
     var amex = $("#amex");
+    var mastercard = $("#mastercard");
+
 
     // Use the payform library to format and validate
     // the payment fields.
@@ -54,7 +55,7 @@ $(function() {
             alert("Wrong card number");
         } else if (!isCvvValid) {
             alert("Wrong CVV");
-        } else {
+        }   else { 
             // Everything is correct. Add your form submission code here.
             alert("Everything is correct");
         }
