@@ -42,3 +42,6 @@ Also not all PayU Latam payment gateway have the same functions this means you h
 
 To work in a test environment and specifics properties please look your's providers documentation in the flowing URL
 https://developers.paymentsos.com/docs/providers.html
+
+## Postman Collection Link
+https://app.getpostman.com/join-team?invite_code=420cd77f7532ff67d2d2e814ffb71708
