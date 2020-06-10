@@ -14,7 +14,7 @@ Steps:
 5.	Enter the credentials of the provider which you can find on each provider's own dashboard.  Please note each provider has different mandatory credentials. By hovering over each text box, a pop up will appear with a more detailed explanation of each credential.
 6.	To consider. If you want to make tests through PayU, since the test environment does not replicate data from your account in production, it is important that you use the following credentials in the request, depending on the country of your account. URL: http://developers.payulatam.com/en/api/sandbox.html
  
-
+![Image of logo](https://github.com/astridnio/Payment-flow-test/blob/master/documentation%20resourses/mnom8NK59l.gif)
 
 <b>How do I add a Business unit?</b>
 
