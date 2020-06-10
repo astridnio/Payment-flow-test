@@ -1,0 +1,168 @@
+/**
+* Token Creation
+* Postman Response
+*/
+{
+    "token": "161d633b-a23f-426a-b922-ee896f8c0320",
+    "created": "1591758229740",
+    "pass_luhn_validation": true,
+    "encrypted_cvv": "MzA0YTNhZmEtY2U0Zi00ZjljLWI2YTItZjFjOGUyOTMxMzg2Y3Z2X2RlbGltaXRlcnZhdWx0OnYyOkFkMjFQWWNsWEpGL0VNc1U0aDBzYVg1NTh6aU1iZkpVQitmN1cyNUJpZkhyU0VSLzJFaCtaZElLSkdqMmViWmh0RkJ5K3pGeUFUMitwejRLUnRXZVdZc1JTUmVaOUsrNXVBRms3UEli",
+    "token_type": "credit_card",
+    "type": "tokenized",
+    "state": "created",
+    "bin_number": "426807",
+    "vendor": "VISA",
+    "card_type": "CREDIT",
+    "issuer": "BANCOPPEL S.A. INSTITUCION DE BANCA MULTIPLE",
+    "level": "CLASSIC",
+    "country_code": "MEX",
+    "holder_name": "John Doe",
+    "expiration_date": "06/2024",
+    "last_4_digits": "0002"
+}
+/**
+* Payment Creation
+* Postman Response
+*/
+{
+    "id": "e769f6d0-811f-402c-a3b2-5779a2016d7c",
+    "currency": "USD",
+    "created": "1591758279370",
+    "modified": "1591758279370",
+    "statement_soft_descriptor": "HUAWEI P30",
+    "is_chargedback": false,
+    "status": "Initialized",
+    "possible_next_actions": [
+        {
+            "action": "Credit",
+            "href": "https://api.paymentsos.com/payments/e769f6d0-811f-402c-a3b2-5779a2016d7c/credits"
+        },
+        {
+            "action": "Charge",
+            "href": "https://api.paymentsos.com/payments/e769f6d0-811f-402c-a3b2-5779a2016d7c/charges"
+        },
+        {
+            "action": "Authorization",
+            "href": "https://api.paymentsos.com/payments/e769f6d0-811f-402c-a3b2-5779a2016d7c/authorizations"
+        },
+        {
+            "action": "Update Payment",
+            "href": "https://api.paymentsos.com/payments/e769f6d0-811f-402c-a3b2-5779a2016d7c"
+        }
+    ],
+    "amount": 200000
+}
+/**
+* Authorization Creation
+* Postman Response
+*/
+{
+    "id": "c9cfaa60-ad3b-457a-854b-f2d152e12f7f",
+    "created": "1591758304127",
+    "reconciliation_id": "1483561455",
+    "payment_method": {
+        "type": "tokenized",
+        "token": "161d633b-a23f-426a-b922-ee896f8c0320",
+        "token_type": "credit_card",
+        "holder_name": "John Doe",
+        "expiration_date": "06/2024",
+        "last_4_digits": "0002",
+        "pass_luhn_validation": true,
+        "fingerprint": "a74b3e33-036c-4846-b907-d584fc2d0392",
+        "bin_number": "426807",
+        "vendor": "VISA",
+        "issuer": "BANCOPPEL S.A. INSTITUCION DE BANCA MULTIPLE",
+        "card_type": "CREDIT",
+        "level": "CLASSIC",
+        "country_code": "MEX",
+        "created": "1591758229740"
+    },
+    "result": {
+        "status": "Succeed"
+    },
+    "provider_data": {
+        "provider_name": "PayULatam",
+        "response_code": "APPROVED",
+        "description": "APPROVED",
+        "raw_response": "{\"authorizationCode\":\"MOCK-BTE-1591758303798\",\"responseCode\":\"APPROVED\",\"PAYMENT_WAY_ID\":\"4\",\"state\":\"APPROVED\",\"BANK_REFERENCED_CODE\":\"CREDIT\",\"orderId\":\"120131359\",\"operationDate\":\"1591740304053\",\"pendingReason\":null,\"paymentNetworkResponseErrorMessage\":null,\"errorCode\":null,\"responseMessage\":\"Aprobado\",\"referenceQuestionnaire\":null,\"additionalInfo\":\"{\\\"responseNetworkMessage\\\":null,\\\"transactionType\\\":\\\"AUTHORIZATION\\\",\\\"paymentNetwork\\\":\\\"BANORTE\\\",\\\"rejectionType\\\":\\\"NONE\\\",\\\"cardType\\\":\\\"CREDIT\\\",\\\"travelAgencyAuthorizationCode\\\":null}\",\"trazabilityCode\":\"458250371149\",\"transactionDate\":null,\"transactionTime\":null,\"paymentNetworkResponseCode\":\"APPROVED\",\"extraParameters\":\"{\\\"BANK_REFERENCED_CODE\\\":\\\"CREDIT\\\",\\\"EXPIRATION_DATE\\\":1592363100000,\\\"PAYMENT_WAY_ID\\\":\\\"4\\\"}\",\"EXPIRATION_DATE\":\"1592363100000\",\"transactionId\":\"9764f6e8-4589-4e45-8cc7-963cff925ad5\"}",
+        "authorization_code": "MOCK-BTE-1591758303798",
+        "transaction_id": "9764f6e8-4589-4e45-8cc7-963cff925ad5",
+        "external_id": "120131359"
+    },
+    "amount": 200000,
+    "provider_configuration": {
+        "id": "0afd838d-2f27-4a9d-8b00-8657c51cf141",
+        "name": "API-INTEGRATION",
+        "description": "INTEGRATION",
+        "created": "1591681107210",
+        "modified": "1591716518429",
+        "account_id": "5abdfdd3-6ee6-4941-90d8-95373f7d1b26",
+        "provider_id": "3d9cb628-a5cd-49e2-b455-e46b10d7b6f3",
+        "type": "cc_processor",
+        "href": "https://api.paymentsos.com/accounts/5abdfdd3-6ee6-4941-90d8-95373f7d1b26/provider-configurations/0afd838d-2f27-4a9d-8b00-8657c51cf141"
+    }
+}
+/**
+* Capture Creation
+* Postman Response
+*/
+{
+    "id": "26c0c41c-706b-4c81-95c5-9fe6f3ed8631",
+    "created": "1591758318194",
+    "result": {
+        "status": "Succeed"
+    },
+    "amount": 200000,
+    "provider_data": {
+        "provider_name": "PayULatam",
+        "response_code": "APPROVED",
+        "description": "APPROVED",
+        "raw_response": "{\"authorizationCode\":\"MOCK-BTE-1591758317827\",\"responseCode\":\"APPROVED\",\"PAYMENT_WAY_ID\":\"4\",\"state\":\"APPROVED\",\"BANK_REFERENCED_CODE\":\"CREDIT\",\"orderId\":\"120131359\",\"operationDate\":\"1591740318116\",\"pendingReason\":null,\"paymentNetworkResponseErrorMessage\":null,\"errorCode\":null,\"responseMessage\":\"Aprobado\",\"referenceQuestionnaire\":null,\"additionalInfo\":\"{\\\"responseNetworkMessage\\\":null,\\\"transactionType\\\":\\\"CAPTURE\\\",\\\"paymentNetwork\\\":\\\"BANORTE\\\",\\\"rejectionType\\\":\\\"NONE\\\",\\\"cardType\\\":null,\\\"travelAgencyAuthorizationCode\\\":null}\",\"trazabilityCode\":\"458250371149\",\"transactionDate\":null,\"transactionTime\":null,\"paymentNetworkResponseCode\":\"APPROVED\",\"extraParameters\":\"{\\\"BANK_REFERENCED_CODE\\\":\\\"CREDIT\\\",\\\"PAYMENT_WAY_ID\\\":\\\"4\\\"}\",\"transactionId\":\"4b7380d9-18ce-4c4d-8832-3e04427b5023\"}",
+        "authorization_code": "MOCK-BTE-1591758317827",
+        "transaction_id": "4b7380d9-18ce-4c4d-8832-3e04427b5023",
+        "external_id": "120131359"
+    },
+    "provider_configuration": {
+        "id": "0afd838d-2f27-4a9d-8b00-8657c51cf141",
+        "name": "API-INTEGRATION",
+        "description": "INTEGRATION",
+        "created": "1591681107210",
+        "modified": "1591716518429",
+        "account_id": "5abdfdd3-6ee6-4941-90d8-95373f7d1b26",
+        "provider_id": "3d9cb628-a5cd-49e2-b455-e46b10d7b6f3",
+        "type": "cc_processor",
+        "href": "https://api.paymentsos.com/accounts/5abdfdd3-6ee6-4941-90d8-95373f7d1b26/provider-configurations/0afd838d-2f27-4a9d-8b00-8657c51cf141"
+    }
+}
+/**
+* Refund Creation
+* Postman Response
+*/
+{
+    "id": "87fd9565-543a-4387-a8b8-8a97b054ab03",
+    "created": "1591758329633",
+    "result": {
+        "status": "Succeed"
+    },
+    "provider_data": {
+        "provider_name": "PayULatam",
+        "response_code": "APPROVED",
+        "description": "APPROVED",
+        "raw_response": "{\"authorizationCode\":\"MOCK-BTE-1591758329161\",\"responseCode\":\"APPROVED\",\"PAYMENT_WAY_ID\":\"4\",\"state\":\"APPROVED\",\"BANK_REFERENCED_CODE\":\"CREDIT\",\"orderId\":\"120131359\",\"operationDate\":\"1591740329402\",\"pendingReason\":null,\"paymentNetworkResponseErrorMessage\":null,\"errorCode\":null,\"responseMessage\":\"Aprobado\",\"referenceQuestionnaire\":null,\"additionalInfo\":\"{\\\"responseNetworkMessage\\\":null,\\\"transactionType\\\":\\\"REFUND\\\",\\\"paymentNetwork\\\":\\\"BANORTE\\\",\\\"rejectionType\\\":\\\"NONE\\\",\\\"cardType\\\":null,\\\"travelAgencyAuthorizationCode\\\":null}\",\"trazabilityCode\":\"458250371149\",\"transactionDate\":null,\"transactionTime\":null,\"paymentNetworkResponseCode\":\"APPROVED\",\"extraParameters\":\"{\\\"BANK_REFERENCED_CODE\\\":\\\"CREDIT\\\",\\\"PAYMENT_WAY_ID\\\":\\\"4\\\"}\",\"transactionId\":\"cbf20b7b-77e4-4c78-b67e-5153ec6b8107\"}",
+        "authorization_code": "MOCK-BTE-1591758329161",
+        "transaction_id": "cbf20b7b-77e4-4c78-b67e-5153ec6b8107",
+        "external_id": "120131359"
+    },
+    "amount": 200000,
+    "provider_configuration": {
+        "id": "0afd838d-2f27-4a9d-8b00-8657c51cf141",
+        "name": "API-INTEGRATION",
+        "description": "INTEGRATION",
+        "created": "1591681107210",
+        "modified": "1591716518429",
+        "account_id": "5abdfdd3-6ee6-4941-90d8-95373f7d1b26",
+        "provider_id": "3d9cb628-a5cd-49e2-b455-e46b10d7b6f3",
+        "type": "cc_processor",
+        "href": "https://api.paymentsos.com/accounts/5abdfdd3-6ee6-4941-90d8-95373f7d1b26/provider-configurations/0afd838d-2f27-4a9d-8b00-8657c51cf141"
+    }
+}
