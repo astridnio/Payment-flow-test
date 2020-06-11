@@ -63,12 +63,18 @@ document.getElementById('refund').addEventListener('click', function (event) {
             //Refund validation
             if (refund_r["result"]) {
                 //Refund Succedd
-                swal({
-                    title: "Success!",
-                    text: "Order Refounded",
-                    type: "success",
-                    confirmButtonText: "Ok"
-                });
+                setTimeout(function () { 
+                    swal({
+                        title: "Success!",
+                        text: "Order Refounded",
+                        type: "success",
+                        confirmButtonText: "Ok"
+                    },
+                    function(isConfirm){
+                      if (isConfirm) {
+                        window.location.href = "../../index.html";
+                      }
+                    }); }, 500);
             } else {
                 //Refund Error
                 swal({
