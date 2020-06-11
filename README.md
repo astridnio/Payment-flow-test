@@ -49,6 +49,6 @@ https://developers.paymentsos.com/docs/providers.html
 ## Postman Collection Link
 https://app.getpostman.com/join-team?invite_code=420cd77f7532ff67d2d2e814ffb71708
 
-https://github.com/astridnio/Payment-flow-test/blob/master/documentation%20resourses/PaymentsOS-PayU-Latam.postman_collection.json
+https://github.com/astridnio/Payment-flow-test/blob/master/documentation%20resources/PaymentsOS-PayU-Latam.postman_collection.json
 
-https://github.com/astridnio/Payment-flow-test/blob/master/documentation%20resourses/postman_responses.txt
+https://github.com/astridnio/Payment-flow-test/blob/master/documentation%20resources/postman_responses.txt
